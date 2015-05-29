@@ -14,6 +14,12 @@
 		18496C671B17167D00BE7DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18496C661B17167D00BE7DF1 /* Images.xcassets */; };
 		18496C6A1B17167D00BE7DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18496C681B17167D00BE7DF1 /* LaunchScreen.xib */; };
 		18496C761B17167D00BE7DF1 /* customPopUpViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18496C751B17167D00BE7DF1 /* customPopUpViewTests.swift */; };
+		18496C801B17207200BE7DF1 /* popUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18496C7F1B17207200BE7DF1 /* popUp.xib */; };
+		18496C841B17227100BE7DF1 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18496C831B17227100BE7DF1 /* PopUpView.swift */; };
+		18496C881B1730CE00BE7DF1 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 18496C871B1730CE00BE7DF1 /* flag.png */; };
+		1878561A1B1891DB0088D988 /* secondPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187856191B1891DB0088D988 /* secondPopUp.xib */; };
+		1878561C1B1892390088D988 /* SecondPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878561B1B1892390088D988 /* SecondPopUp.swift */; };
+		18DF47311B181D5F007BB118 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF47301B181D5F007BB118 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		18496C6F1B17167D00BE7DF1 /* customPopUpViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customPopUpViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18496C741B17167D00BE7DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18496C751B17167D00BE7DF1 /* customPopUpViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customPopUpViewTests.swift; sourceTree = "<group>"; };
+		18496C7F1B17207200BE7DF1 /* popUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUp.xib; sourceTree = "<group>"; };
+		18496C831B17227100BE7DF1 /* PopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopUpView.swift; path = ../PopUpView.swift; sourceTree = "<group>"; };
+		18496C871B1730CE00BE7DF1 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		187856191B1891DB0088D988 /* secondPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondPopUp.xib; sourceTree = "<group>"; };
+		1878561B1B1892390088D988 /* SecondPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPopUp.swift; sourceTree = "<group>"; };
+		18DF47301B181D5F007BB118 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +73,11 @@
 		18496C4E1B17167D00BE7DF1 = {
 			isa = PBXGroup;
 			children = (
+				18496C631B17167D00BE7DF1 /* Main.storyboard */,
 				18496C591B17167D00BE7DF1 /* customPopUpView */,
 				18496C721B17167D00BE7DF1 /* customPopUpViewTests */,
 				18496C581B17167D00BE7DF1 /* Products */,
+				18496C871B1730CE00BE7DF1 /* flag.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +95,11 @@
 			children = (
 				18496C5C1B17167D00BE7DF1 /* AppDelegate.swift */,
 				18496C611B17167D00BE7DF1 /* ViewController.swift */,
-				18496C631B17167D00BE7DF1 /* Main.storyboard */,
+				18DF47301B181D5F007BB118 /* PopUpViewController.swift */,
+				18496C831B17227100BE7DF1 /* PopUpView.swift */,
+				18496C7F1B17207200BE7DF1 /* popUp.xib */,
+				187856191B1891DB0088D988 /* secondPopUp.xib */,
+				1878561B1B1892390088D988 /* SecondPopUp.swift */,
 				18496C661B17167D00BE7DF1 /* Images.xcassets */,
 				18496C681B17167D00BE7DF1 /* LaunchScreen.xib */,
 				18496C5E1B17167D00BE7DF1 /* customPopUpView.xcdatamodeld */,
@@ -196,7 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18496C651B17167D00BE7DF1 /* Main.storyboard in Resources */,
+				18496C881B1730CE00BE7DF1 /* flag.png in Resources */,
+				1878561A1B1891DB0088D988 /* secondPopUp.xib in Resources */,
 				18496C6A1B17167D00BE7DF1 /* LaunchScreen.xib in Resources */,
+				18496C801B17207200BE7DF1 /* popUp.xib in Resources */,
 				18496C671B17167D00BE7DF1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1878561C1B1892390088D988 /* SecondPopUp.swift in Sources */,
+				18DF47311B181D5F007BB118 /* PopUpViewController.swift in Sources */,
 				18496C621B17167D00BE7DF1 /* ViewController.swift in Sources */,
+				18496C841B17227100BE7DF1 /* PopUpView.swift in Sources */,
 				18496C601B17167D00BE7DF1 /* customPopUpView.xcdatamodeld in Sources */,
 				18496C5D1B17167D00BE7DF1 /* AppDelegate.swift in Sources */,
 			);
@@ -246,6 +270,7 @@
 				18496C641B17167D00BE7DF1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = customPopUpView;
 			sourceTree = "<group>";
 		};
 		18496C681B17167D00BE7DF1 /* LaunchScreen.xib */ = {
@@ -279,6 +304,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -324,6 +350,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -415,6 +442,7 @@
 				18496C7B1B17167D00BE7DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18496C7C1B17167D00BE7DF1 /* Build configuration list for PBXNativeTarget "customPopUpViewTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +451,7 @@
 				18496C7E1B17167D00BE7DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

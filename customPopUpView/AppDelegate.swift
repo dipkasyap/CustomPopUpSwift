@@ -2,9 +2,10 @@
 //  AppDelegate.swift
 //  customPopUpView
 //
-//  Created by apple on 5/28/15.
-//  Copyright (c) 2015 apple. All rights reserved.
-//
+//  Created by Dip on 5/29/15.
+//  Copyright (c) 2015 Dip Kasyap . All rights reserved.
+// DIP: COPYLEFT : Feel Free to Customize & Improve :)
+
 
 import UIKit
 import CoreData
