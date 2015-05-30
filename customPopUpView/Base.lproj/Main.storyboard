@@ -68,8 +68,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7UP-mQ-lvm" customClass="PopUpView" customModule="customPopUpView" customModuleProvider="target">
-                                <rect key="frame" x="16" y="211" width="568" height="178"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UP-mQ-lvm" customClass="PopUpView" customModule="customPopUpView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="157" width="568" height="332"/>
                                 <color key="backgroundColor" red="0.58400407659999998" green="0.25149772970000001" blue="0.7384390783" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -77,6 +77,8 @@
                         <constraints>
                             <constraint firstItem="7UP-mQ-lvm" firstAttribute="leading" secondItem="6id-AF-ioa" secondAttribute="leadingMargin" id="28M-O6-ekB"/>
                             <constraint firstItem="7UP-mQ-lvm" firstAttribute="trailing" secondItem="6id-AF-ioa" secondAttribute="trailingMargin" id="aT5-89-9xJ"/>
+                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="top" secondItem="Lbh-Cl-l6C" secondAttribute="bottom" constant="137" id="c6e-jP-alw"/>
+                            <constraint firstItem="S3a-8L-VYu" firstAttribute="top" secondItem="7UP-mQ-lvm" secondAttribute="bottom" constant="111" id="lGP-qh-sNo"/>
                         </constraints>
                     </view>
                     <connections>

@@ -70,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180E750C1B197CDB00E038F0 /* customPopUP repliicate these as per need */ = {
+			isa = PBXGroup;
+			children = (
+				18DF47301B181D5F007BB118 /* PopUpViewController.swift */,
+				18496C831B17227100BE7DF1 /* PopUpView.swift */,
+				18496C7F1B17207200BE7DF1 /* popUp.xib */,
+			);
+			name = "customPopUP repliicate these as per need";
+			sourceTree = "<group>";
+		};
 		18496C4E1B17167D00BE7DF1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +105,7 @@
 			children = (
 				18496C5C1B17167D00BE7DF1 /* AppDelegate.swift */,
 				18496C611B17167D00BE7DF1 /* ViewController.swift */,
-				18DF47301B181D5F007BB118 /* PopUpViewController.swift */,
-				18496C831B17227100BE7DF1 /* PopUpView.swift */,
-				18496C7F1B17207200BE7DF1 /* popUp.xib */,
+				180E750C1B197CDB00E038F0 /* customPopUP repliicate these as per need */,
 				187856191B1891DB0088D988 /* secondPopUp.xib */,
 				1878561B1B1892390088D988 /* SecondPopUp.swift */,
 				18496C661B17167D00BE7DF1 /* Images.xcassets */,

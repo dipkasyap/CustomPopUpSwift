@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "customPopUpView/PopUpViewController.swift"
-            timestampString = "454595604.733946"
+            filePath = "PopUpView.swift"
+            timestampString = "454681534.159328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "removeAimation()"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "picker(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

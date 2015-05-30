@@ -14,7 +14,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var btnPopUp: UIButton!
-   // var vc: PopUpViewController?
+    var vc: PopUpViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func showPopUpView(sender: AnyObject) {
 
-        
+      // call 1
       
         var storyboard: UIStoryboard = UIStoryboard (name: "Main", bundle: nil)
       
@@ -40,19 +40,20 @@ class ViewController: UIViewController {
             nextView.definesPresentationContext = true
             self.presentViewController(nextView, animated: false, completion: nil)
             nextView.showInView(self.view, animated: true)
-
-            
             nextView.caller = 1 //for first type popUp
         } else {
-//            let nextView = storyboard.instantiateViewControllerWithIdentifier("PopUpViewControllerView") as!PopUpViewController
-//            nextView.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-//            nextView.providesPresentationContextTransitionStyle = true
-//            nextView.definesPresentationContext = true
-//            self.presentViewController(nextView, animated: false, completion: nil)
-//            nextView.showInView(self.view, animated: true)
+            
+//            self.vc = PopUpViewController(nibName: "SecondPopUp", bundle: nil)
 //
-//            nextView.caller = 2 //for second type popUp
-        }
+//            
+//            
+//            vc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+//            vc.providesPresentationContextTransitionStyle = true
+//            vc.definesPresentationContext = true
+//            self.presentViewController(vc, animated: false, completion: nil)
+//            vc.showInView(self.view, animated: true)
+//
+         }
         
        
 

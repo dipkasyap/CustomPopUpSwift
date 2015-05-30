@@ -17,6 +17,8 @@ class PopUpViewController: UIViewController,popUpviewDelegate {
     //propety to check caleer for popUP
     var caller:Int?
 
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         aview.delegate = self
