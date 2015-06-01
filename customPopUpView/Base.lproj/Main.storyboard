@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PlO-TC-TKl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,22 +30,11 @@
                                     <action selector="showPopUpView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1s-87-J8w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="302" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkE-UV-fy5">
-                                <rect key="frame" x="218" y="310" width="164" height="42"/>
-                                <color key="backgroundColor" red="1" green="0.1176470588" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="second">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showPopUpView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rb4-45-dYc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="MfS-WE-5W6" secondAttribute="centerY" constant="36" id="FD0-8Y-KNB"/>
                             <constraint firstAttribute="centerX" secondItem="MfS-WE-5W6" secondAttribute="centerX" id="fJo-Yc-3hR"/>
-                            <constraint firstAttribute="centerX" secondItem="WkE-UV-fy5" secondAttribute="centerX" id="x1n-Rl-MVJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="412"/>
+            <point key="canvasLocation" x="-55" y="411"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="Nau-bo-IBg">
@@ -71,14 +60,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UP-mQ-lvm" customClass="PopUpView" customModule="customPopUpView" customModuleProvider="target">
                                 <rect key="frame" x="16" y="157" width="568" height="332"/>
                                 <color key="backgroundColor" red="0.58400407659999998" green="0.25149772970000001" blue="0.7384390783" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" priority="250" constant="568" id="1dL-7r-0PA"/>
+                                    <constraint firstAttribute="height" priority="250" constant="332" id="2Kp-N2-UEb"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmT-bO-BwI">
+                                <rect key="frame" x="277" y="530" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPopUp:" destination="PlO-TC-TKl" eventType="touchUpInside" id="hVf-F5-5Xr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="leading" secondItem="6id-AF-ioa" secondAttribute="leadingMargin" id="28M-O6-ekB"/>
-                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="trailing" secondItem="6id-AF-ioa" secondAttribute="trailingMargin" id="aT5-89-9xJ"/>
-                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="top" secondItem="Lbh-Cl-l6C" secondAttribute="bottom" constant="137" id="c6e-jP-alw"/>
-                            <constraint firstItem="S3a-8L-VYu" firstAttribute="top" secondItem="7UP-mQ-lvm" secondAttribute="bottom" constant="111" id="lGP-qh-sNo"/>
+                            <constraint firstItem="S3a-8L-VYu" firstAttribute="top" secondItem="wmT-bO-BwI" secondAttribute="bottom" constant="40" id="6Be-Ge-aMG"/>
+                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="leading" secondItem="6id-AF-ioa" secondAttribute="leadingMargin" id="I35-P4-Wks"/>
+                            <constraint firstAttribute="centerX" secondItem="wmT-bO-BwI" secondAttribute="centerX" id="XYy-CK-SUs"/>
+                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="top" secondItem="Lbh-Cl-l6C" secondAttribute="bottom" constant="137" id="bq8-pQ-aVJ"/>
+                            <constraint firstItem="7UP-mQ-lvm" firstAttribute="trailing" secondItem="6id-AF-ioa" secondAttribute="trailingMargin" id="tEh-ZD-s3J"/>
                         </constraints>
                     </view>
                     <connections>

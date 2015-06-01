@@ -21,6 +21,9 @@ class PopUpViewController: UIViewController,popUpviewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       //initially view is hidden
+        aview.hidden = true
+        
         aview.delegate = self
         aview.layer.cornerRadius = 5
         aview.layer.shadowOpacity = 0.8
@@ -44,23 +47,24 @@ class PopUpViewController: UIViewController,popUpviewDelegate {
     
     func showAnimation()
     {
-        self.view.transform = CGAffineTransformMakeScale(0.9, 0.9)
-        self.view.alpha = 0.0;
+        aview.view.transform = CGAffineTransformMakeScale(0.9, 0.9)
+        aview.view.alpha = 0.0;
         UIView.animateWithDuration(0.25, animations: {
-            self.view.alpha = 1.0
-            self.view.transform = CGAffineTransformMakeScale(1, 1.0)
+            self.aview.view.alpha = 1.0
+            self.aview.view.transform = CGAffineTransformMakeScale(1, 1.0)
         });
     }
     
     func removeAimation()
     {
         UIView.animateWithDuration(0.25, animations: {
-            self.view.transform = CGAffineTransformMakeScale(0.5, 0.5)
-            self.view.alpha = 0.0;
+            self.aview.view.transform = CGAffineTransformMakeScale(0.5, 0.5)
+            self.aview.view.alpha = 0.0;
             }, completion:{(finished : Bool)  in
                 if (finished)
                 {
-                    self.dismissViewControllerAnimated(false, completion: {})
+                    self.aview.hidden = true
+                    //self.dismissViewControllerAnimated(false, completion: {})
                     
  
                 }
@@ -70,5 +74,9 @@ class PopUpViewController: UIViewController,popUpviewDelegate {
     func dismissController() {
         
         removeAimation()
+    }
+    @IBAction func showPopUp(sender: AnyObject) {
+        aview.xibSetup()
+        aview.hidden = false
     }
 }

@@ -32,7 +32,7 @@ class PopUpView: UIView,UIPickerViewDelegate {
     
     override init(frame: CGRect) {
          super.init(frame: frame)
-        xibSetup()
+       // xibSetup()
     }
     
     
